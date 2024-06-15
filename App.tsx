@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import QRcodeScanner from "./pages/QRcodeScanner";
 import FilePickerPage from "./pages/FilePickerPage";
 import ReactNativeProgressPage from "./pages/ReactNativeProgressPage";
+import GradientPage from "./pages/GradientPage";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
     // </View>
     // <QRcodeScanner />
     // <FilePickerPage />
-    <ReactNativeProgressPage />
+    // <ReactNativeProgressPage />
+    <GradientPage />
   );
 }
 
