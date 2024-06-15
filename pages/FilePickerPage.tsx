@@ -11,15 +11,28 @@ const FilePickerPage = () => {
 
   return (
     <View style={styles.background}>
-      <Text style={styles.file}>Upload CSV File</Text>
-      <View style={styles.button}>
-        <TouchableOpacity>
-          <Button
-            title="upload your file"
-            color="black"
-            onPress={pickDocument}
-          />
-        </TouchableOpacity>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: "flex-end",
+          alignItems: "center",
+        }}
+      >
+        <Text>Upload CSV File</Text>
+        <View>
+          <TouchableOpacity>
+            <Button
+              title="upload your file"
+              color="black"
+              onPress={pickDocument}
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>
+          Ensure your file is in CSV format.
+        </Text>
       </View>
     </View>
   );
@@ -28,15 +41,16 @@ const FilePickerPage = () => {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
+  },
+  footer: {
+    flex: 1,
+    justifyContent: "flex-end",
     alignItems: "center",
-    justifyContent: "center",
+    paddingBottom: 20,
   },
-  file: {
-    color: "black",
-    marginHorizontal: 145,
-  },
-  button: {
-    marginHorizontal: 60,
+  footerText: {
+    fontSize: 16,
+    color: "gray",
   },
 });
 
