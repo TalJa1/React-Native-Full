@@ -22,14 +22,28 @@
         "expo-notifications",
         {
           "icon": "./local/assets/notification-icon.png",
-          "color": "#ffffff",
+          "color": "#E6A3D9",
           "defaultChannel": "default",
-          "sounds": [
-            
-          ]
+          "sounds": ["./local/assets/mainSound.wav"]
         }
       ]
     ]
+  },
+  "android": {
+    "useNextNotificationsApi": true,
+    "notification": {
+      "icon": "./local/assets/notification-icon.png",
+      "color": "#E6A3D9",
+      "defaultChannelId": "default"
+    }
+  },
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.yourcompany.yourapp",
+    "buildNumber": "1.0.0",
+    "notification": {
+      "sound": true
+    }
   },
   "name": "react-full-app"
 }

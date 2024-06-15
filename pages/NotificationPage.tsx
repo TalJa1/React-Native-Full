@@ -4,22 +4,20 @@ import * as Notifications from "expo-notifications";
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
-    shouldPlaySound: false,
+    shouldPlaySound: true,
     shouldSetBadge: false,
   }),
 });
 
-// Make sure install expo-device | npx expo install expo-notifications | npx expo install expo-constants
 const NotificationPage = () => {
   async function schedulePushNotification() {
     await Notifications.scheduleNotificationAsync({
       content: {
-        title: "You've got mail! 📬",
-        body: "Here is the notification body",
-        // data: { data: "goes here", test: { test1: "more data" } },
+        title: "Check notifications from T📬",
+        body: "Contents here for checking",
+        sound: "mainSound.wav",
       },
       trigger: null,
-
     });
   }
 
