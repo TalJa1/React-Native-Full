@@ -5,6 +5,7 @@ import QRcodeScanner from "./pages/QRcodeScanner";
 import FilePickerPage from "./pages/FilePickerPage";
 import ReactNativeProgressPage from "./pages/ReactNativeProgressPage";
 import GradientPage from "./pages/GradientPage";
+import NotificationPage from "./pages/NotificationPage";
 
 export default function App() {
   return (
@@ -15,7 +16,8 @@ export default function App() {
     // <QRcodeScanner />
     // <FilePickerPage />
     // <ReactNativeProgressPage />
-    <GradientPage />
+    // <GradientPage />
+    <NotificationPage />
   );
 }
 
