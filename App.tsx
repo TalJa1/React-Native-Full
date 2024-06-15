@@ -3,6 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import QRcodeScanner from "./pages/QRcodeScanner";
 import FilePickerPage from "./pages/FilePickerPage";
+import ReactNativeProgressPage from "./pages/ReactNativeProgressPage";
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
     // <QRcodeScanner />
-    <FilePickerPage />
+    // <FilePickerPage />
+    <ReactNativeProgressPage />
   );
 }
 
