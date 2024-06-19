@@ -14,14 +14,14 @@ import CalenderPage from "./pages/CalenderPage";
 
 export default function App() {
   return (
-    <QRcodeScanner />
+    // <QRcodeScanner />
     // <FilePickerPage />
     // <ReactNativeProgressPage />
     // <GradientPage />
     // <NotificationPage />
     // <NetworkPage />
     // <RadioButtonPage />
-    // <CarouselSilderPage />
+    <CarouselSilderPage />
     // <GettingLocationPage />
     // <CalenderPage />
   );
