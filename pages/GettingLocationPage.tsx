@@ -64,6 +64,7 @@ const GettingLocationPage = () => {
       >
         <Text>Click here to get location</Text>
       </TouchableOpacity>
+      <Text>{JSON.stringify(location)}</Text>
     </View>
   );
 };
