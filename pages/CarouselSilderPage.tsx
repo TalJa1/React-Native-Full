@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Dimensions, Image } from "react-native";
-import Carousel from "react-native-snap-carousel";
+import Carousel, { Pagination } from "react-native-snap-carousel";
 import data from "../data/storage";
 
 const SLIDER_WIDTH = Dimensions.get("window").width + 80;
@@ -17,8 +17,11 @@ interface CarouselCardItemProps {
   index: number;
 }
 
+// npm install --save react-native-snap-carousel@4.0.0-beta.6
 const CarouselSilderPage = () => {
   const isCarousel = React.useRef(null);
+  const [index, setIndex] = React.useState(0);
+
   const CarouselCardItem: React.FC<CarouselCardItemProps> = ({
     item,
     index,
@@ -47,7 +50,7 @@ const CarouselSilderPage = () => {
         }}
       ></View>
       <Carousel
-        layout="tinder"
+        layout="stack" // tinder | default | stack
         layoutCardOffset={9}
         ref={isCarousel}
         data={data}
@@ -55,8 +58,25 @@ const CarouselSilderPage = () => {
         vertical={false} // Remenber adding this to make the error disappears
         sliderWidth={SLIDER_WIDTH}
         itemWidth={ITEM_WIDTH}
+        onSnapToItem={(index) => setIndex(index)} // for setting index for pagging
         inactiveSlideShift={0}
         useScrollView={true}
+      />
+      {/* Add pagging if needed */}
+      <Pagination
+        dotsLength={data.length}
+        activeDotIndex={index}
+        carouselRef={isCarousel}
+        dotStyle={{
+          width: 10,
+          height: 10,
+          borderRadius: 5,
+          marginHorizontal: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.92)",
+        }}
+        inactiveDotOpacity={0.4}
+        inactiveDotScale={0.6}
+        tappableDots={true}
       />
     </View>
   );
