@@ -31,7 +31,6 @@ const CalenderPage = () => {
         onDayPress={(day) => {
           setSelected(day.dateString);
         }}
-        marking={{}}
         markedDates={{
           "2024-06-10": { dots: [running] },
           "2024-06-12": {},
@@ -40,8 +39,8 @@ const CalenderPage = () => {
           },
           [selected]: {
             selected: true,
+
             disableTouchEvent: true,
-            // selectedTextColor: "red",
           },
         }}
       />
