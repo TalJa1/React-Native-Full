@@ -8,6 +8,7 @@ import GradientPage from "./pages/GradientPage";
 import NotificationPage from "./pages/NotificationPage";
 import NetworkPage from "./pages/NetworkPage";
 import RadioButtonPage from "./pages/RadioButtonPage";
+import CarouselSilderPage from "./pages/CarouselSilderPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
     // <GradientPage />
     // <NotificationPage />
     // <NetworkPage />
-    <RadioButtonPage />
+    // <RadioButtonPage />
+    <CarouselSilderPage />
   );
 }
