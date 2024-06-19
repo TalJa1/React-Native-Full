@@ -18,16 +18,7 @@ export default function App() {
     // <FilePickerPage />
     // <ReactNativeProgressPage />
     // <GradientPage />
-    <NotificationPage />
-    // <NetworkPage />
+    // <NotificationPage />
+    <NetworkPage />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
