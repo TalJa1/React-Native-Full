@@ -5,7 +5,9 @@ import RadioGroup from "react-native-radio-buttons-group";
 const NetworkPage = () => {
   
   return (
-    <View></View>
+    <View>
+      
+    </View>
   );
 };
 
