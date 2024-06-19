@@ -14,7 +14,7 @@ import CalenderPage from "./pages/CalenderPage";
 
 export default function App() {
   return (
-    // <QRcodeScanner />
+    <QRcodeScanner />
     // <FilePickerPage />
     // <ReactNativeProgressPage />
     // <GradientPage />
@@ -23,6 +23,6 @@ export default function App() {
     // <RadioButtonPage />
     // <CarouselSilderPage />
     // <GettingLocationPage />
-    <CalenderPage />
+    // <CalenderPage />
   );
 }
