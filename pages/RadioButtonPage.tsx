@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import React, { useMemo, useState } from "react";
 import RadioGroup from "react-native-radio-buttons-group";
 
+// npm i react-native-radio-buttons-group --save
 const RadioButtonPage = () => {
   const radioButtons = useMemo(
     () => [
