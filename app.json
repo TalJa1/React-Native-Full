@@ -24,9 +24,13 @@
           "icon": "./local/assets/notification-icon.png",
           "color": "#E6A3D9",
           "defaultChannel": "default",
-          "sounds": [
-            "./local/assets/mainSound.wav"
-          ]
+          "sounds": ["./local/assets/mainSound.wav"]
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
         }
       ]
     ],

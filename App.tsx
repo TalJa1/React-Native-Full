@@ -9,6 +9,7 @@ import NotificationPage from "./pages/NotificationPage";
 import NetworkPage from "./pages/NetworkPage";
 import RadioButtonPage from "./pages/RadioButtonPage";
 import CarouselSilderPage from "./pages/CarouselSilderPage";
+import GettingLocationPage from "./pages/GettingLocationPage";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
     // <NotificationPage />
     // <NetworkPage />
     // <RadioButtonPage />
-    <CarouselSilderPage />
+    // <CarouselSilderPage />
+    <GettingLocationPage />
   );
 }
