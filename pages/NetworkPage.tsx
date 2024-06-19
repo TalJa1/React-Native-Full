@@ -1,11 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React, { useMemo, useState } from "react";
+import RadioGroup from "react-native-radio-buttons-group";
 
 const NetworkPage = () => {
+  
   return (
-    <View>
-    </View>
-  )
-}
+    <View></View>
+  );
+};
 
-export default NetworkPage
+export default NetworkPage;

@@ -7,6 +7,7 @@ import ReactNativeProgressPage from "./pages/ReactNativeProgressPage";
 import GradientPage from "./pages/GradientPage";
 import NotificationPage from "./pages/NotificationPage";
 import NetworkPage from "./pages/NetworkPage";
+import RadioButtonPage from "./pages/RadioButtonPage";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
     // <ReactNativeProgressPage />
     // <GradientPage />
     // <NotificationPage />
-    <NetworkPage />
+    // <NetworkPage />
+    <RadioButtonPage />
   );
 }
