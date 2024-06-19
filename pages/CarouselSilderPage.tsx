@@ -52,6 +52,7 @@ const CarouselSilderPage = () => {
         ref={isCarousel}
         data={data}
         renderItem={CarouselCardItem}
+        vertical={false} // Remenber adding this to make the error disappears
         sliderWidth={SLIDER_WIDTH}
         itemWidth={ITEM_WIDTH}
         inactiveSlideShift={0}
