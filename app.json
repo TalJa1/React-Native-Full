@@ -24,10 +24,17 @@
           "icon": "./local/assets/notification-icon.png",
           "color": "#E6A3D9",
           "defaultChannel": "default",
-          "sounds": ["./local/assets/mainSound.wav"]
+          "sounds": [
+            "./local/assets/mainSound.wav"
+          ]
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "428802a3-d4c2-4967-9d5c-de61637b9e85"
+      }
+    }
   },
   "android": {
     "useNextNotificationsApi": true,
