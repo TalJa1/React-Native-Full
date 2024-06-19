@@ -15,6 +15,10 @@ const CalenderPage = () => {
     handleChangeDate();
   }, [selected]);
 
+  const running = { key: "running", color: "blue" };
+  const cycling = { key: "cycling", color: "green" };
+  const walking = { key: "walking", color: "orange" };
+
   return (
     <View
       style={{
@@ -23,10 +27,17 @@ const CalenderPage = () => {
       }}
     >
       <Calendar
+        markingType="multi-dot"
         onDayPress={(day) => {
           setSelected(day.dateString);
         }}
+        marking={{}}
         markedDates={{
+          "2024-06-10": { dots: [running] },
+          "2024-06-12": {},
+          "2024-06-13": {
+            dots: [running, cycling, walking],
+          },
           [selected]: {
             selected: true,
             disableTouchEvent: true,
